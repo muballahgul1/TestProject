@@ -20,7 +20,7 @@ public class FirstTest {
 	WebDriver driver;
 	@BeforeTest
 	public void test() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gul_l\\Desktop\\text\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://admin-demo.nopcommerce.com/login");
 		driver.manage().window().maximize();

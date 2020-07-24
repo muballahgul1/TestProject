@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-23T16:22:20Z" name="Default suite" finished-at="2020-07-23T16:22:32Z" duration-ms="11953">
+  <suite started-at="2020-07-24T04:27:36Z" name="Suite" finished-at="2020-07-24T04:27:52Z" duration-ms="16114">
     <groups>
     </groups>
-    <test started-at="2020-07-23T16:22:20Z" name="Default test" finished-at="2020-07-23T16:22:32Z" duration-ms="11953">
+    <test started-at="2020-07-24T04:27:36Z" name="Test" finished-at="2020-07-24T04:27:52Z" duration-ms="16114">
+      <class name="Demo.UnitTest">
+        <test-method signature="test1()[pri:0, instance:Demo.UnitTest@5d534f5d]" started-at="2020-07-24T04:27:44Z" name="test1" finished-at="2020-07-24T04:27:52Z" duration-ms="8295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- Demo.UnitTest -->
       <class name="Demo.FirstTest">
-        <test-method is-config="true" signature="test()[pri:0, instance:Demo.FirstTest@4d154ccd]" started-at="2020-07-23T16:22:20Z" name="test" finished-at="2020-07-23T16:22:31Z" duration-ms="10583" status="PASS">
+        <test-method is-config="true" signature="test()[pri:0, instance:Demo.FirstTest@576d5deb]" started-at="2020-07-24T04:27:36Z" name="test" finished-at="2020-07-24T04:27:43Z" duration-ms="6510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="validedErrorMasage()[pri:0, instance:Demo.FirstTest@4d154ccd]" started-at="2020-07-23T16:22:31Z" name="validedErrorMasage" finished-at="2020-07-23T16:22:32Z" duration-ms="1005" status="FAIL">
+        <test-method signature="validedErrorMasage()[pri:0, instance:Demo.FirstTest@576d5deb]" started-at="2020-07-24T04:27:43Z" name="validedErrorMasage" finished-at="2020-07-24T04:27:44Z" duration-ms="929" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -36,29 +42,24 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validedErrorMasage -->
-        <test-method is-config="true" signature="validateTestCase(org.testng.ITestResult)[pri:0, instance:Demo.FirstTest@4d154ccd]" started-at="2020-07-23T16:22:32Z" name="validateTestCase" finished-at="2020-07-23T16:22:32Z" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="validateTestCase(org.testng.ITestResult)[pri:0, instance:Demo.FirstTest@576d5deb]" started-at="2020-07-24T04:27:44Z" name="validateTestCase" finished-at="2020-07-24T04:27:44Z" duration-ms="358" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validedErrorMasage status=FAILURE method=FirstTest.validedErrorMasage()[pri:0, instance:Demo.FirstTest@4d154ccd] output={null}]]]>
+                <![CDATA[[TestResult name=validedErrorMasage status=FAILURE method=FirstTest.validedErrorMasage()[pri:0, instance:Demo.FirstTest@576d5deb] output={null}]]]>
               </value>
             </param>
           </params>
@@ -66,6 +67,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- validateTestCase -->
       </class> <!-- Demo.FirstTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

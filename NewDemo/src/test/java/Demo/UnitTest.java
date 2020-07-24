@@ -12,5 +12,6 @@ public class UnitTest {
 	public void test1() {
 		dr=new ChromeDriver();
 		dr.get("https://www.facebook.com/");
+		dr.quit();
 	}
 }
